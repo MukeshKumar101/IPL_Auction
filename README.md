@@ -1,2 +1,2 @@
-# IPL_Auction_React
-This repository is for Front-end developers
+# IPL_Auction
+This repository is for IPL AUCTION developer.
