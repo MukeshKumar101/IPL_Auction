@@ -1,0 +1,12 @@
+{
+  "admin": [
+      "/course",
+      "/evaluationParameter"
+  ],
+  "evaluator": [
+      "/evaluate"
+  ],
+  "trainee" : [
+      "/viewScore"
+  ]
+}
