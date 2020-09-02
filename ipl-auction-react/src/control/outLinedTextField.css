@@ -2,7 +2,7 @@
   position: relative;
 }
 
-label {
+.label {
   position: absolute;
   font-size: 1rem;
   left: 0;
@@ -17,7 +17,7 @@ label {
   pointer-events: none;
 }
 
-input {
+.input {
   font-size: 1rem;
   outline: none;
   border: 2px solid gray;
@@ -25,19 +25,20 @@ input {
   padding: 1rem 0.7rem;
   color: gray;
   transition: 0.1s ease-out;
+  width: 100%;
 }
 
-input:focus {
+.input:focus {
   border-color: #15327d;
 }
 
-input:focus + label {
+.input:focus + label {
   color: #15327d;
   top: 0;
   transform: translateY(-50%) scale(0.9);
 }
 
-input:not(:placeholder-shown) + label {
+.input:not(:placeholder-shown) + label {
   top: 0;
-  transform: translateY(-50%) scale(0.9);
+  transform: translateY(+50%) scale(0.9);
 }
