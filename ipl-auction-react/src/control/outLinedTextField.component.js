@@ -13,15 +13,13 @@ const OutLinedTextField = (props) => {
     fieldName,
     customizeClassNameForInput,
     customizeClassNameForLabel,
-    isClassNameProvidedForInput,
-    isClassNameProvidedForLabel,
   } = props;
   return (
     <div className={classes.textfield}>
       <input
         className={
-          isClassNameProvidedForInput
-            ? { customizeClassNameForInput }
+          customizeClassNameForInput
+            ?  [customizeClassNameForInput] 
             : classes.input
         }
         id={id}
@@ -34,8 +32,8 @@ const OutLinedTextField = (props) => {
       />
       <label
         className={
-          isClassNameProvidedForLabel
-            ? { customizeClassNameForLabel }
+          customizeClassNameForLabel
+            ? [customizeClassNameForLabel]
             : classes.label
         }
       >
@@ -54,8 +52,8 @@ OutLinedTextField.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   fieldName: PropTypes.string,
-  isClassNameProvidedForInput: PropTypes.bool,
-  isClassNameProvidedForLabel: PropTypes.bool,
+  customizeClassNameForInput: PropTypes.string,
+  customizeClassNameForLabel: PropTypes.string,
 };
 
 export default OutLinedTextField;
