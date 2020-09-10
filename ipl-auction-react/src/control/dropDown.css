@@ -1,0 +1,17 @@
+.select {
+  position: absolute;
+  width: 20%;
+  height: 3em;
+  line-height: 3.2;
+  background: white;
+  overflow: hidden;
+  border-radius: 0.1em;
+  border: 2px solid black;
+  padding: 0em 0.25em;
+}
+
+.contanier {
+  position: relative;
+}
+
+
